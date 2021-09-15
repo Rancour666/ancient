@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Parallax</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<a target="_blank" href="https://www.youtube.com/channel/UCqQA4EMiZ-Srnfuc2VlOTCw"><img
+						src="img/transparent_logo22.png" alt="logo"></a>
+			</div>
+			<div class="header__menu">
+				<nav>
+					<ul class="menu-list">
+						<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008919315246"
+								class="menu-link">ARTIST</a></li>
+						<li><a href="" class="menu-link">HISTORY</a></li>
+						<li><a target="_blank" href="https://ancientvoice.bandcamp.com/album/path-of-solitude"
+								class="menu-link">DISCOGRAPHY</a></li>
+						<li><a target="_blank" href="https://www.youtube.com/watch?v=TkyjKNYcZd0&t=1202s"
+								class="menu-link">OTHER PROJECTS</a></li>
+						<li><a href="" class="menu-link">MERCH</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="page">
+			<div class="parallax">
+				<div class="parallax__montain parallax__montain_1"></div>
+				<div class="parallax__montain parallax__montain_2"></div>
+				<div class="parallax__montain parallax__montain_3"></div>
+				<div class="parallax__fog"></div>
+			</div>
+			<div class="content">
+				<div class="content__body">
+					<div class="content__header">
+						<img src="img/transparent_logo.png" alt="logo">
+						<h2 class="content__subtitle">...Path of Solitude ...</h2>
+					</div>
+					<div class="content__article">
+						<div class="content__text">
+							<p>Ну ось і завершена основна частина роботи над черговим, четвертим альбомом, а саме композиція та
+								запис. На черзі зведення та мастеринг матеріалу. Стиль майже не змінився, але додалось більше
+								елементів Dungeon Synth. Реліз буде представлений на початку наступного року, а поки представляю
+								титул до нього. Малюнок від чарівної Марина Чопей, оформлення моє. </p>
+							<p>Well, here is the main part of the work on the next, fourth album, namely the composition and
+								recording. On the queue is the construction and mastering of the material. The style has almost
+								not changed, but added more elements of Dungeon Synth. The release will be presented at the
+								beginning of next year, and while presenting the title to it. A picture from the charming Marina
+								Chopei, my design.</p>
+						</div>
+						<div class="album__cover"><img src="img/59295702_2312528519069680_7743815821255770112_n.jpg"
+								alt="cover"></div>
+						<div class="audio__block">
+							<audio id="bgAudio" controls class="audio__item"
+								src="img/Ancient Voice  Path of Solitude 2019 Dungeon Synth Dark Ambient_320kbps.mp3"
+								autoplay></audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var audio = document.getElementById("bgAudio");
+		audio.volume = 0.5;
+		audio.play(0.5);
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
