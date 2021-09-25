@@ -23,7 +23,7 @@ $(document).ready(function() {
 			var z_4 = 1+(w*0.00001*p_b);
 		$('.parallax__montain_3').css('transform','translate3d('+hr_2+'px,0,0) scale('+z_4+')');
 
-			var z_5 = 0.5+(w/100000*p);
+			var z_5 = 0.5+(w/110000*p);
 		$('.content__header img').css('transform','scale('+z_5+')');
 	});
 });
