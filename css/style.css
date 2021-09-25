@@ -91,6 +91,31 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/BrandonGrotesque-BoldItalic.woff2") format("woff2"), url("../fonts/BrandonGrotesque-BoldItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orator Std";
+  src: url("../fonts/OratorStd.woff2") format("woff2"), url("../fonts/OratorStd.woff") format("woff"), url("../fonts/OratorStd.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lombardina';
+  src: url("../fonts/LombardinaInitialOne.eot");
+  src: url("../fonts/LombardinaInitialOne.eot?#iefix") format("embedded-opentype"), url("../fonts/LombardinaInitialOne.woff2") format("woff2"), url("../fonts/LombardinaInitialOne.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*Основные стили*/
 .page {
   position: absolute;
@@ -105,7 +130,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  m1n-height: 150px;
+  min-height: 150px;
   position: fixed;
   z-index: 100;
   -webkit-box-align: center;
@@ -125,6 +150,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
+    padding: 0;
   }
 }
 
@@ -139,6 +165,19 @@ body {
      object-fit: cover;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
+  -webkit-box-shadow: 5px 5px 15px 10px #292929;
+          box-shadow: 5px 5px 15px 10px #292929;
+  border-radius: 10px;
+  background-color: rgba(179, 176, 176, 0.515);
+}
+
+@media (max-width: 425px) {
+  .header__logo {
+    max-width: 100%;
+  }
+  .header__logo img {
+    border-radius: 0px;
+  }
 }
 
 .header__logo img:hover {
@@ -184,18 +223,22 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 50px 0px 50px 0px;
+    margin: 20px 0px 0px 0px;
   }
+}
+
+.menu-list li {
+  margin: 0px 0px 20px 0px;
 }
 
 .menu-link {
   display: block;
+  font-family: 'Lombardina';
   padding: 0px 20px 0px 0px;
-  color: black;
-  text-transform: uppercase;
+  color: #242323;
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 32px;
   text-shadow: 10px 10px 10px #000;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
@@ -209,8 +252,8 @@ body {
 
 .menu-link:hover {
   display: block;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 .parallax {
@@ -274,6 +317,12 @@ body {
           filter: grayscale(1);
 }
 
+@media (max-width: 425px) {
+  .content__header img {
+    margin-bottom: 0px;
+  }
+}
+
 .content__title {
   font-size: 200px;
 }
@@ -282,6 +331,18 @@ body {
   font-family: 'Kunstler';
   font-size: 120px;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .content__subtitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 325px) {
+  .content__subtitle {
+    font-size: 44px;
+  }
 }
 
 .content__article {
@@ -295,17 +356,34 @@ body {
   border-radius: 50px;
 }
 
+@media (max-width: 425px) {
+  .content__article {
+    border-radius: 0px;
+  }
+}
+
 .content__text {
   text-align: center;
   width: 80%;
   margin: 0px auto;
   letter-spacing: 1.2px;
+  font-family: "Orator Std", sans-serif;
   text-shadow: 12px 2px 12px black;
+  text-align: justify;
 }
 
 @media (max-width: 425px) {
   .content__text {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .content__text {
+    font-family: "Orator Std", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
   }
 }
 
